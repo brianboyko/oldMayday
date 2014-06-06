@@ -76,7 +76,7 @@ name="viewport" content="initial-scale=1"><style id="campaignify-css">a,
    background-color: #b50000;
    }
    .donation-progress {
-   background-color: #009933;
+   background-color: #880000;
    }   
    </style><style>#widget_campaignify_hero_contribute-2 { background-color: #0a0a0a; color: #fff9fb; }#widget_campaignify_hero_contribute-2 .donation-share-buttons a { color: #fff9fb; }#text-2 { background-color: #000000; color: #eeee22; }#widget_campaignify_campaign_video-2 { background-color: #171723; color: #ffffff; }#text-3 { background-color: #171723; color: #ffffff; }#text-4 { background-color: #221f2a; color: #ffffff; }#text-5 { background-color: #2b232f; color: #ffffff; }#text-6 { background-color: #3a2e38; color: #ffffff; }#text-7 { background-color: #4b3c43; color: #ffffff; }#text-8 { background-color: #380101; color: #eeee22; }</style><style type="text/css">.site-title span {
    position: absolute;
@@ -103,7 +103,7 @@ id="masthead" class="site-header" role="banner"><div
 class="container"><div
 class="site-header-main"><a
 href="" title="May One." rel="home" class="site-branding"> <hgroup><h1 class="site-title"> <img
-src="wp-content/uploads/2014/04/logo_inverted31-e1398893630874.png" width="190" height="79" alt="" /> <span>May One.</span></h1><h2 class="site-description">Help the U.S. kickstart fundamental reform.</h2> </hgroup> </a>
+src="/logo.png" height="79" alt="" /> <span>May One.</span></h1><h2 class="site-description">Help the U.S. kickstart fundamental reform.</h2> </hgroup> </a>
 <!--
 <a href="http://democracy.com/MayOne/donate.aspx#form" target="_blank"><span class="donate-directly-mini"><img style="top:0; margin-right:10px; float:right;" src="donate_directly_mini.png"></span><span class="donate-directly-home"><img style="top:0; float:right;" src="donate_directly_home.png"></span></A>
 -->
@@ -153,7 +153,10 @@ class="campaign-hero loading has-slideshow">
    <span class="donation-progress-funded"  id="super-cool-progress-bar-funded"></span>
    <span class="donation-progress-togo"    id="super-cool-progress-bar-togo"></span>
    <div class="donation-progress" style="width: 0%" id="super-cool-progress-bar-bar"></div>
+
  </div>
+
+    <div class="truetotal-css"><span id="truetotal"></span></div>
 
  <script>
     function addCommas(nStr) {
@@ -178,7 +181,7 @@ class="campaign-hero loading has-slideshow">
 
     // javascript is so awesome. this is how you write June 1st. Cause June is the
     // 5th month, indexed by zero. thanks javascript!
-    var date_its_over = Date.UTC(2014,05,01,10,00,00,00);
+    var date_its_over = Date.UTC(2014,06,04,10,00,00,00);
     var days_left = Math.floor((date_its_over - Date.now())/(1000*24*60*60));
     var days_left_message = '' + days_left + ' days left';
     if (days_left == 1) {
@@ -186,13 +189,14 @@ class="campaign-hero loading has-slideshow">
     }
 
     function totalRaisedCB(totalRaisedCents) {
-      var totalRaised = totalRaisedCents / 100;
+      var totalRaised = (totalRaisedCents / 100) - 1000000;
       // todo: this needs to change if we make it past 1million
-      var percent = Math.floor(totalRaised / 10000);
+      var percent = Math.floor(totalRaised / 50000);
       setText("super-cool-progress-bar-percent", '' + percent + '% Funded');
       setText("super-cool-progress-bar-funded", '$' + addCommas(totalRaised) + ' Raised');
       document.getElementById("super-cool-progress-bar-bar").style.width='' + Math.min(100, percent) + '%';
       setText("super-cool-progress-bar-togo", days_left_message);
+      setText("truetotal", 'TOTAL RAISED: $' + addCommas(totalRaised + 1000000) + ' + $1M MATCH');
     }
 
     var total_req = document.createElement('script');
@@ -264,11 +268,9 @@ class="campaign-hero-slider-info"></div> <img
 src="wp-content/uploads/2014/04/12-bridge.jpg" /></li>
 
 </ul></div><div> </section><section
-id="text-2" class="padding_1px campaign-widget widget_text arrowed"><CENTER>Great job making it to the first million in just 13 days! Help us get a head start on our $6M goal for June by continuing to pledge!</CENTER></section><section
 id="widget_campaignify_campaign_video-2" class="not_on_direct_contributions campaign-widget widget_campaignify_campaign_video arrowed"><div
 class="container"><h3 class="campaign-widget-title">&quot;&#8230;a citizens' funded and crowdsourced superPAC <span style="font-family:'Helvetica', 'Arial', 'sans';">&mdash;</span> to end all superPACs&quot;</h3><div
-class="campaign-video-wrapper"> <iframe
-src="//player.vimeo.com/video/93299391" width="900" height="506" frameborder="0" title="Mayday PAC Launch" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></div>
+class="campaign-video-wrapper"> <iframe width="900" height="506" src="//www.youtube.com/embed/qzHcEVwkSxU" frameborder="0" allowfullscreen></iframe></div></div>
 You can also <a href="https://www.youtube.com/watch?v=qCcqkyRJl7M">view the video here</a>
 </section><section
 id="text-3" class="campaign-widget widget_text arrowed"><div

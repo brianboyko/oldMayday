@@ -3418,14 +3418,23 @@ body.page-id-368 #edd-anon-wrap {
     margin-right:auto;
 }
 
+.truetotal-css {
+	font-family:Lato, Helvetica, Arial, sans-serif;
+	font-size:14px;
+	text-align:center;
+	padding:2px;
+	margin: 5px 15px;
+     background-color:#008800;
+     	border-radius: 26px;
+}
+
+
 
 @media (max-width: 550px) {
    .pullquote {
    display:none;
    {
 }
-
-
 
 
 
