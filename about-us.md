@@ -206,17 +206,6 @@ Lane](http://www.binarylane.com.au).
 
 <div style="clear: both;"></div>
 
-### Corey Farwell <img class="alignleft size-thumbnail wp-image-10194" src="https://mayone.us/wp-content/uploads/2014/05/corey.jpg" alt="coreyfarwell" width="150" height="150">
-
-[Corey Farwell](http://rwell.org/) is a software developer from the San
-Francisco Bay Area. He is an advocate for free culture and increased government
-transparency. He graduated from California Polytechnic State University in 2013
-with a B.S. in Software Engineering and now works for an education start-up. He
-enjoys photography, writing music, reading non-fiction, and traveling the
-world.
-
-<div style="clear: both;"></div>
-
 ### Brad Pitcher <img class="alignleft size-thumbnail wp-image-10194" src="https://mayone.us/wp-content/uploads/2014/05/brad.jpg" alt="coreyfarwell" width="150" height="150">
 
 [Brad Pitcher](http://onewheel.me/) is a senior software engineer at
